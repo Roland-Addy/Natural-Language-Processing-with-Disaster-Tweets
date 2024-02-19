@@ -5,7 +5,7 @@ This data science project is based on a kaggle competition! Social media is unde
 The dataset was created by the company figure-eight however the dataset I worked with can be found [here on Kaggle](https://www.kaggle.com/competitions/nlp-getting-started/data).
 Below is the Data Dictionary:
 
-| Attributes/Variables                     | Survey Questions   | 
+| Attributes/Variables                     | Description   | 
 |:-------------------                      |:--------------|
 | id                                       |Tweet ID         | 
 | keyword                                  | keyword of the tweet         | 
