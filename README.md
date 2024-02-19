@@ -12,3 +12,19 @@ Below is the Data Dictionary:
 | location                                 | location of the tweeter          | 
 | text                                     | actual tweet          | 
 | target (target variable)                 | whether or not the tweet announces an emergency or disaster          | 
+
+
+## Project Organization
+* Step 1: Exploratory Data Analysis
+* Step 2: Text Vectorization
+* Step 3: Fitting the Model
+
+
+### Exploratory Data Analysis
+* The location variable was dropped since there were a lot of missing values.
+* The keyword column was dropped since that insight can be derived from the text column.
+* The id column was dropped since it is irrelevant to the model prediction.
+
+### Text Vectorization
+I experimented with both the bag of words and term frequency inverse document frequency for vectorizing. 
+Short recap for those not familiar: Machine learning models do not understand inputs in text form, hence the words needs to be be represented by numbers to keep the models happy. The bag of words model represents each word by the number of times it appears in each document (or tweet). The term frequency inverse document frequency on the other hand, represents each word by it's relative importance, given more weight to words that are less common across the training data and less weight to words that are more common.
