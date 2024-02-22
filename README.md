@@ -28,3 +28,9 @@ Below is the Data Dictionary:
 ### Text Vectorization
 I experimented with both the bag of words and term frequency inverse document frequency for vectorizing. 
 Short recap for those not familiar: Machine learning models do not understand inputs in text form, hence the words needs to be be represented by numbers to keep the models happy. The bag of words model represents each word by the number of times it appears in each document (or tweet). The term frequency inverse document frequency on the other hand, represents each word by it's relative importance, given more weight to words that are less common across the training data and less weight to words that are more common.
+
+### Fitting the model
+Each vectorized texts (bag of words and term frequeny inverse document frequency) were fitted to a random forest model(grid searching over a range of hyperparameters). Each model gave the same result with an F1 score of 0.73. An XGBoost model on the bag of words vectorized text, performed slightly better with an f1 score of 0.74.
+
+### Next Steps
+The next step is to experiment on other vectorization techniques, to improve on the model performance.
